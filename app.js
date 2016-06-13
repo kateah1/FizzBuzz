@@ -1,20 +1,20 @@
 $(document).ready(function() {
 
-	if (num % 3 && num % 5 == 0) {
-		console.log(FizzBuzz)
-	}
-	if else(num % 3 == 0) {
-		console.log(Fizz)
-	}
-	if else(num % 5 == 0) {
-		console.log(Buzz)
-	}
-	else() {
-		console.log(num)
-	}
+	for (var num = 1; num <= 100; num++) {
 
-
-
+		if (num % 3 == 0 && num % 5 == 0) {
+			$("ul").append("<li>" + "FizzBuzz" + "</li>");
+		}
+		else if(num % 3 == 0) {
+			$("ul").append("<li>" + "Fizz" + "</li>");
+		}
+		else if(num % 5 == 0) {
+			$("ul").append("<li>" + "Buzz" + "</li>");
+		}
+		else {
+			$("ul").append("<li>" + num + "</li>");
+		}
+	};	
 
 
 });
